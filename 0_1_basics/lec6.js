@@ -21,7 +21,7 @@ inside the function.
 
 // symbol is used to make something unique 
 //BigInt is used to handle large values specially .
-// javascript is dynamically typed language it's not statically typed we can define the variable without using the datatype
+// javascript is dynamically typed language it's not statically typed we can define the variable without using the datatype name
 
 const score = 100
 const scoreValue = 100.3

@@ -15,7 +15,7 @@ valueInNumber = Number (score) ;
 console.log(typeof valueInNumber) ;
 console.log(valueInNumber) ; // 0
 
-score = true ;
+score = true ;  
 valueInNumber = Number (score) ; 
 console.log(typeof valueInNumber) ;
 console.log(valueInNumber) ; //1
@@ -28,6 +28,7 @@ console.log(valueInNumber) ; //NaN
 
 // boolean conversion:-
 
+console.log('boolean')
 let loggedin = 1;
 let loggedIn = Boolean(loggedin) ;
 console.log(loggedin) ;
@@ -38,7 +39,8 @@ console.log(loggedin) ;
 // Boolean("hitesh") = false
 
 
-// string conversion 
+// string conversion :-
+
 let num = 33;
 let stringnum = String(num) ; 
 console.log(typeof stringnum) ;
