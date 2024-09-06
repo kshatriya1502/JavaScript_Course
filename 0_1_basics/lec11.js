@@ -5,7 +5,10 @@ console.log(myArr[0]) ; // zero-based indexing
 
 // making copy of the arrays does the shallow copy.
 const myHeros = ["shaktiman" , "comics"] ; 
+console.log(typeof myHeros) ; 
 const myArray2 = new Array("values" , "comics") ; 
+console.log(typeof myArray2) ;
+console.log(myArray2.__proto__)
 console.log(myArr);
 console.log(myArray2); 
 
@@ -35,7 +38,7 @@ console.log(arr.indexOf(3)) ;
 // join method : 
 /* It converts the array value into the string and also slightly shrinks
 the string . */
-const newarr = arr.join() ; 
+const newarr = arr.join('&') ; 
 console.log(newarr) ; 
 console.log(typeof newarr);
 
@@ -59,6 +62,7 @@ changes the original array i.e here in this case is arr */
 
 const marvel_hero = ["thor" , "ironman" , "spiderman"] ; 
 const dc = ["superman" , "flash" , "batman"] ; 
+
 
 
 
@@ -86,6 +90,8 @@ let c = ["zaden" , "nucleya" , "ritwiz" , "alesso"]
 
 let new_arr_dj = [...a , ...b , ...c] ; 
 console.log(new_arr_dj) ; 
+
+
 
 
 

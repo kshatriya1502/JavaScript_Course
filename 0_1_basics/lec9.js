@@ -10,7 +10,7 @@ console.log(typeof balance) ;
 console.log(balance.toString().length) ; // converted into the string using the to_string() and then string length functionality used to get the length of the number .
 console.log(balance.toFixed(2)) ; 
 const onum = 23.896 ; 
-console.log(onum.toPrecision(2)) ; //24 f
+console.log(onum.toPrecision(2)) ; //24 
 const num = 123.9582399 ; 
 console.log(onum.toPrecision(1))
 
@@ -57,7 +57,7 @@ console.log(Math.ceil((Math.random()*10)+1)) ;
 
 
 const min = 10 ; 
-const max = 20 ;
+const max = 10 ;
 
 console.log(Math.floor(Math.random()*(max-min+1)) + min) ; 
 // +min we are doing because it should contain a minimum value of the 10 atleast

@@ -5,12 +5,12 @@ ab tak count hota hae */
 
 
 let mydate = new Date() ; 
-console.log(mydate);
-console.log(mydate.toString());
+console.log(mydate);//2024-09-05T12:35:04.227Z
+console.log(mydate.toString());//Thu Sep 05 2024 18:05:04 GMT+0530 (India Standard Time)
 console.log(mydate.getDay()) ; //3 -- > wednesday
-console.log(mydate.toDateString());
-console.log(mydate.toLocaleDateString());
-console.log(typeof mydate) ; 
+console.log(mydate.toDateString());//Thu Sep 05 2024
+console.log(mydate.toLocaleDateString());//5/9/2024
+console.log(typeof mydate) ; //object
 
 // we can create our own date also rather than the automatic dates
 let mycreatedDate = new Date(2023 , 0 , 23) ; 
