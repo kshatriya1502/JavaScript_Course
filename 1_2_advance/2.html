@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: #414141; color: aliceblue;">
+    <h2>Amazing image</h2>
+    <div >
+        <ul id="images">
+            <li><img width="200px" id="photoshop" src="https://images.pexels.com/photos/3561339/pexels-photo-3561339.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt="photoshop"></li>
+            <li><img width="200px" id="japan" src="https://images.pexels.com/photos/3532553/pexels-photo-3532553.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><img width="200px" id="river" src="https://images.pexels.com/photos/3532551/pexels-photo-3532551.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <!-- <li><img width="200px" id="owl" src="https://images.pexels.com/photos/3532552/pexels-photo-3532552.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""  onclick='alert("owl")'></li> this 
+             approach is not preffered , or it is not good -->
+            <li><img width="200px" id="owl" src="https://images.pexels.com/photos/3532552/pexels-photo-3532552.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt="" ></li> 
+            
+            <li><img width="200px" id="prayer" src="https://images.pexels.com/photos/2522671/pexels-photo-2522671.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><a style="color: aliceblue;" href="https://google.com" id="google">Google</a></li>
+        </ul>
+   </div>
+</body>
+<script>
+    /*events in the js run sequentially usually , but sometimes we use
+    asynchronous to control browser events*/
+   
+    /*this technique is not bad but it doesn't give you much feature:
+    
+        document.getElementById('owl').onclick = function(){
+            alert('owl clicked') ; 
+        }
+    
+    */
+
+    /*this is the best approach to add the events using the addeventlistener
+    
+    document.getElementById('owl').addEventListener('click' , function(){
+        alert('owl click again')
+    } ,false)
+    
+    */
+    // attachEvent() It was used in the early times in the days of internet explorer
+    // jquery - >>> on was in jquery or addEventListner nowdays
+
+
+    // document.getElementById('owl').addEventListener('click' , function(e){
+    //    console.log(e) ; 
+    // } ,false)
+
+    /* here is false is the type of the event propagation : 
+    There are two types of the event propagation mainly :
+    event bubbling : false
+    event capturing : true 
+    
+    */
+   
+   /*
+   get reference for this event propagation : 
+
+   https://youtu.be/_TjtAyMkiTI?t=13455
+   
+   */
+    // examples of the event propagation : 
+
+    // document.getElementById('images').addEventListener('click' , function(e){
+    //    console.log('clicked inside the ui') ; 
+    //    e.stopPropagation()
+    // } ,false)
+    // document.getElementById('owl').addEventListener('click' , function(e){
+    //    console.log('owl clicked') ; 
+    //    e.stopPropagation() // this stops the bubbling (see the video link refernce for more info)
+       
+    // } ,false)
+
+
+    // preventing the default behaviour of the anchor tag of redirecting to another tab  ,  by using the preventDefault method 
+
+    // document.getElementById('google').addEventListener('click' , function(e){
+    //    console.log('clicked google') ; 
+    //    e.preventDefault() ;
+    //    e.stopPropagation() ; // stops bubbling up 
+    // } ,false)
+    
+    // document.querySelector('#images').addEventListener('click' , function(e){
+
+    //     console.log(e.target) ; // prints the event target
+    //     console.log(e.target.parentNode) ; // prints the parent node
+    // } , false)
+
+
+    // removing the iamge on clicking : 
+    document.querySelector('#images').addEventListener('click' , function(e){
+
+        console.log(e.target.parentNode) ; 
+        let removeIt = e.target.parentNode
+        // removeIt.remove() // method 1 of removing
+        removeIt.parentNode.removeChild(removeIt) // method 2 of removing
+
+
+    } , false)
+    
+
+
+
+
+
+    /*read this : 
+
+        type : keyboards-keys
+        timestamp 
+        defaultPrevented - mainly used in the form 
+        target  , toElement , srcElement , currentTarget 
+        Postion related : clientx , clienty , screenx , screenY
+        altkey , ctrlkey , shiftkey , keyCode
+    
+    */
+
+
+ 
+
+
+
+
+
+
+
+</script>
+</html>
