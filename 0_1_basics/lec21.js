@@ -49,3 +49,6 @@ const add1 = (n1 , n2) =>  n1 + n2 ;
 
 
 console.log(add1(5 , 8))
+
+const arr = [1 , 3, 4 , 5] ; 
+// arr.forEach(() => {})
