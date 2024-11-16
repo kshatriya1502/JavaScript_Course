@@ -19,10 +19,16 @@ let user ={
 console.log(user) ;
 
 let user2 = user ; 
-user2.email = "abc@gmail.com" ; /* changing here will also change the email
+user2.email = "abc@gmail.com" ; 
+
+/* 
+changing here will also change the email
 value in the  user also because when we make user2 that contains the user 
 so here user2 does not contains the copy of the user instead it contains
-the reference */
+the reference 
+*/
+
+
 
 console.log(user) ; 
 

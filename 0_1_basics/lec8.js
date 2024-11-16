@@ -24,15 +24,16 @@ console.log(str.length) ;
 console.log(str.toUpperCase) ;
 console.log(str.charAt(2)) ;
 console.log(str.indexOf('o')) ; 
-console.log(str.slice(-11,4));
-console.log(str.substring(0,5)) ;
+console.log(str.slice(0,4));
+console.log(str.substring(3,5)) ;
 const str1 = "    Hello WORLD   " ; 
 console.log(str1) ;
 console.log(str1.trim()) ;
 const url = "https://hitesh.com/hitesh/%20/chaicode "
 console.log(url.replace('%20' , '-')) ; // replace the certain character in the string .
 console.log(url.includes('hitesh')) ; // tells the following string and character is present in the string or not .
-const splitstr = url.split('/') ;
+const splitstr = url.split('/') ; // it splits the string on the basis of parameter provide and returns the list . 
+
 console.log(splitstr) ;
 
 

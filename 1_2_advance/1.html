@@ -4,21 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>dom learning</title>
+    <style>
+        body{
+            background-color:black ;
+        }
+        .bg-black{
+            
+            color :aquamarine;
+        }
+    </style>
 </head>
 <body>
     <div class="bg-black">
-        <h1 class="heading">
+        <h1 id="title"   class="heading">
             Dom learning on chai aur code .
+            <span>tesxt test</span>
         </h1>
         <p>Lorem ipsum dolor sit amet.</p>
     </div>
+    <script>
+        document.getElementById('title') ; // prints the 
+    </script>
 </body>
 </html>
 
 
 
 <!-- 
-
+run these scripts in the browser : 
 console.log(window) : to get various functionalities such as location  . 
 console.dir(document) : to get info in the detail that were not showing in doing the console.log(window)
 

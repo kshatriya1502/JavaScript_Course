@@ -12,7 +12,7 @@ console.log(balance.toFixed(2)) ;
 const onum = 23.896 ; 
 console.log(onum.toPrecision(2)) ; //24 
 const num = 123.9582399 ; 
-console.log(onum.toPrecision(1))
+console.log(num.toPrecision(3))
 
 /* 
 
@@ -22,13 +22,38 @@ got rounded to 24.
 */
 
 const hundreds = 1000000 ;
-console.log(hundreds.toLocaleString()) ; /*converts the 100000 into the form of the 10,00,000 which is default US format we can make into the any format using various arguments */
-console.log(hundreds.toLocaleString('en-IN')) ;
+console.log(hundreds.toLocaleString()) ; 
+
+/*converts the 100000 into the form of the 10,00,000 which is default US format we can make into the any format using various arguments */
+
+console.log(hundreds.toLocaleString('en-US')) ;
 
 console.log(Number.MAX_VALUE) ; 
 console.log(Number.MAX_SAFE_INTEGER) ; 
 console.log(Number.MIN_VALUE) ; 
 console.log(Number.MIN_SAFE_INTEGER) ;
+
+
+/*
+ 
+   Number.MAX_VALUE is about the magnitude of the number, focusing on how      large a number can be.
+ 
+   Number.MAX_SAFE_INTEGER is about the precision of integer values, ensuring accurate representation and operations.
+
+    Number.MAX_VALUE pertains to floating-point numbers and their upper limit.
+
+    Number.MAX_SAFE_INTEGER pertains specifically to integers and their safe representation.
+
+
+    Beyond Number.MAX_VALUE, numbers are represented as Infinity, without consideration for precision.
+
+    Beyond Number.MAX_SAFE_INTEGER, integer precision cannot be guaranteed, leading to potential inaccuracies in calculations.
+
+ * 
+ * 
+ * 
+ * 
+ */
 
 // *************************Maths******************************
 console.log(Math) 
@@ -51,13 +76,14 @@ console.log(Math.random()) ; // it's value always lies within [0  , 1] included
 
 console.log(Math.round((Math.random()*10)+1)) ; 
 console.log(Math.floor((Math.random()*10)+1)) ; 
-console.log(Math.ceil((Math.random()*10)+1)) ; 
+console.log(Math.ceil((Math.random()*10)+1))  ; 
+
 /* Math.random()*10+1 incase of the dies game where we should not get zero and non integer  */
 
 
 
-const min = 10 ; 
-const max = 10 ;
+const min = 1 ; 
+const max = 5 ;
 
 console.log(Math.floor(Math.random()*(max-min+1)) + min) ; 
 // +min we are doing because it should contain a minimum value of the 10 atleast

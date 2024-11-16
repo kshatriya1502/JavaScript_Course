@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promise in the js</title>
+</head>
+<body>
+    
+</body>
+<script>
+    const gitapi = "https://jsonplaceholder.typicode.com/users" ;
+    const promise = fetch(gitapi) ; 
+    // console.log(promise) ;  //don't do this
+    
+    // do this : 
+    promise.then((data)=>{
+            console.log(data) ; 
+        })
+        
+        console.log("after promise is made")
+
+    // promise chaining :
+
+    // const gitapi = "https://jsonplaceholder.typicode.com/users" ;
+
+    // fetch(gitapi)
+    // .then((data)=>{
+    //     setTimeout(()=>{
+    //         console.log("after 3 milli seconds");
+    //     } , 5000)
+    //     console.log("inside the set timeout") ; 
+    //     return "hello this is to you" ;
+    // })
+    // .then((data)=>{
+    //     return data + " for love of shreya"
+    // })
+    // .then((data)=>{
+    //     console.log("why not " + data) ; 
+    // })
+    
+
+
+    
+    
+</script>
+</html>

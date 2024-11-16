@@ -4,25 +4,26 @@ const myArr = [0,1,2,3,4,5]
 console.log(myArr[0]) ; // zero-based indexing 
 
 // making copy of the arrays does the shallow copy.
+
 const myHeros = ["shaktiman" , "comics"] ; 
 console.log(typeof myHeros) ; 
 const myArray2 = new Array("values" , "comics") ; 
 console.log(typeof myArray2) ;
-console.log(myArray2.__proto__)
+console.log(myArray2.__proto__) ;
 console.log(myArr);
-console.log(myArray2); 
+console.log(myArray2);     
 
 
-// array methods   :
-arr = [1 , 2 , 3  , 4  , 5] ; 
+// array methods  :
+arr = [1 , 2 , 3  , 4  , 5] ;
 arr.push(2) ; 
 arr.push(7) ; 
-console.log(arr) ;
-
-//pop method : 
-arr.pop() ; 
+console.log(arr) ;                                                              
+                                  
+//pop method :                                                    
+arr.pop() ;                                                                   
 console.log(arr) ; 
-
+                                  
 //unshift : it will add the element from the front
 arr.unshift(99) ; // add 99 in the front of the array
 console.log(arr) ;

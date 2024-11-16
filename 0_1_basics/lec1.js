@@ -18,7 +18,7 @@ let accountState ;
 console.table([accountId , accountEmail , accountPassword , accountCity , accountState])
 
 /*
-NOTE : 
+NOTE :-
 
 Prefer not to use the var because of the issue in the block scope and the
 functional scope

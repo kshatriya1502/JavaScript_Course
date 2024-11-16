@@ -11,6 +11,8 @@ console.log(2**5); // power
 console.log(2/2);
 console.log(2-2);
 console.log(2%2);
+console.log(5/2);
+
 
 let str1 = "hello" ; 
 let str2 = " hitesh";

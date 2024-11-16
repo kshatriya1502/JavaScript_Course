@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+
+    function count(n){
+        let cnt = 1 ; 
+        for(let i = 0 ; i < n ; i++)cnt++ ; 
+        return cnt ; 
+    }
+    const p1 = new Promise((resolve , reject)=>{
+        setTimeout(()=>{
+            resolve("Promise 2 resolved") ;
+        },10000)
+    })
+
+    const p2 = new Promise((resolve , reject)=>{
+        setTimeout(()=>{
+            resolve("Promise 2 resolved") ;
+        },20000)
+    })
+
+    const p3 = new Promise((resolve , reject)=>{
+        setTimeout(()=>{
+            resolve("Promise 3 resolved") ;
+        },30000)
+    })
+
+
+    async function handlePromise(){
+        console.log("hello world") ;
+
+        const val = await p1 ; 
+        console.log("Namste js")
+
+        
+        
+        const val2 = await p2 ; 
+        console.log("namster js")
+        
+
+        const val3 = await p3 ; 
+        console.log("namster js")
+    }
+    handlePromise() ;
+
+</script>
+</html>

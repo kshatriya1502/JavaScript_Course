@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Chai aur code</h1>
+    <button id="stop">Stop</button>
+</body>
+<script>
+
+    // setTimeout function says that hello will be printed after 2 milli seconds.
+    setTimeout(function(){
+        console.log('hello'); 
+    } , 2000)
+    
+
+    const  changeText  = function(){
+        document.querySelector('h1').innerHTML = "best Js COURSE" ; 
+    }
+
+    const changeme = setTimeout(changeText , 5000) ; 
+   
+
+    document.querySelector('#stop').addEventListener('click' , function(){
+        clearTimeout(changeme) ; 
+          /* 
+          
+          clearTimeout(function_name) clears that particular event 
+          that is going to take place after some time or we can also 
+          say that it will stop that particula event before the occuring 
+          of the event if pressed before the given time of occurence.
+
+          */ 
+         
+        console.log('stopped');
+    })
+    /*
+         USING THE ARROW FUNCTION  timeout function : 
+         // setTimeout(() => {
+             
+         // }, timeout);
+    
+    */
+     
+
+
+   
+
+
+
+</script>
+</html>

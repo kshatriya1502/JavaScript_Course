@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>file_system</title>
+</head>
+<body>
+    
+</body>
+<script>
+
+
+    cart = ["hello"]
+    const promise = createOrder(cart) ;
+
+   
+    promise.then(function(message){
+        return message 
+    })
+    .then((message)=>{
+        console.log("before "+message)
+        const valid = false;
+        return new Promise((resolve , reject)=>{
+            if(!valid){
+                const e = new Error("we have a huge error")
+                reject(e) ;
+            }
+            else{
+                setTimeout((message) => {
+                   resolve("after 3 seconds "+message) ;
+                }, 3000);
+            }
+        })
+    })
+    .then((result)=>{
+        console.log("final result :"+result)
+    })
+    .catch((err)=>{
+        console.log(err.message)
+    })
+    
+
+
+    function validateCart(cart){
+        return true;
+    }
+
+    function createOrder(cart)
+    {
+        const pr = new Promise(function(resolve , reject)
+        {
+            if(!validateCart(cart))
+            {
+                const err = new Error("cart is not valid");
+                reject(err);
+            }
+            else
+            {
+               setTimeout(() => {
+                resolve("code is good");
+               },3000);
+              
+            }
+
+        });
+        return  pr ; 
+    }
+
+</script>
+</html>

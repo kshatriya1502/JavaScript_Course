@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>async-await</title>
+</head>
+<body>
+    <h1>async-await</h1>
+</body>
+<script>
+    // async always return a promise : 
+
+    const p = new Promise((resolve , reject)=>{
+        resolve("resolved promised value")
+    })
+
+    async function getData()
+    {
+        // return "Namaste" ; 
+        return p
+    }
+
+    getData().then((result)=>{
+        console.log(result)
+    })
+    getData().then(result=>console.log(result)) ;
+</script>
+</html>

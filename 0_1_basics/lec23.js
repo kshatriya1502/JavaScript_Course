@@ -1,9 +1,9 @@
 // map , filter , reduce . 
 
-const coding =["js" , "ruby" , "java"]
+const coding = ["js" , "ruby" , "java"]
 
 coding.forEach((item)=>{
-    console.log(item) ; 
+   console.log(item) ; 
 })
 // it will run the function for the each item in the coding array and print that item . 
 
@@ -15,5 +15,5 @@ const value = coding.forEach((item)=>{
 })
 console.log(value)
 
-/*forEach loop does'nt return anything it return undefined */
+/* forEach loop does'nt return anything it return undefined */
 

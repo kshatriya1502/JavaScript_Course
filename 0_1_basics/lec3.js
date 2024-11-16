@@ -6,6 +6,7 @@ let valueInNumber = Number (score) ;
 console.log(typeof valueInNumber) ;
 
 score = "33abc" ;
+
 valueInNumber = Number (score) ; 
 console.log(typeof valueInNumber) ;
 console.log(valueInNumber) ; // NaN(NOT A NUMBER)

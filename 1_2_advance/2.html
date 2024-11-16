@@ -22,6 +22,7 @@
    </div>
 </body>
 <script>
+
     /*events in the js run sequentially usually , but sometimes we use
     asynchronous to control browser events*/
    
@@ -32,7 +33,7 @@
         }
     
     */
-
+     
     /*this is the best approach to add the events using the addeventlistener
     
     document.getElementById('owl').addEventListener('click' , function(){
@@ -40,6 +41,8 @@
     } ,false)
     
     */
+
+
     // attachEvent() It was used in the early times in the days of internet explorer
     // jquery - >>> on was in jquery or addEventListner nowdays
 
@@ -48,10 +51,11 @@
     //    console.log(e) ; 
     // } ,false)
 
+
     /* here is false is the type of the event propagation : 
     There are two types of the event propagation mainly :
-    event bubbling : false
-    event capturing : true 
+    event bubbling : false  (pehle bottom phir top)
+    event capturing : true  (pehle top phir bottom)
     
     */
    
@@ -65,11 +69,12 @@
 
     // document.getElementById('images').addEventListener('click' , function(e){
     //    console.log('clicked inside the ui') ; 
-    //    e.stopPropagation()
+    // //    e.stopPropagation()
     // } ,false)
     // document.getElementById('owl').addEventListener('click' , function(e){
-    //    console.log('owl clicked') ; 
-    //    e.stopPropagation() // this stops the bubbling (see the video link refernce for more info)
+    //    console.log('owl clicked') ;  
+
+    // //    e.stopPropagation() // this stops the bubbling (see the video link refernce for more info)
        
     // } ,false)
 
@@ -78,7 +83,7 @@
 
     // document.getElementById('google').addEventListener('click' , function(e){
     //    console.log('clicked google') ; 
-    //    e.preventDefault() ;
+    //    e.preventDefault() ;// it will stop the default nature of the anchor tag of redirecting user to the next page.
     //    e.stopPropagation() ; // stops bubbling up 
     // } ,false)
     
@@ -87,7 +92,7 @@
     //     console.log(e.target) ; // prints the event target
     //     console.log(e.target.parentNode) ; // prints the parent node
     // } , false)
-
+    
 
     // removing the iamge on clicking : 
     document.querySelector('#images').addEventListener('click' , function(e){
@@ -97,14 +102,14 @@
         // removeIt.remove() // method 1 of removing
         removeIt.parentNode.removeChild(removeIt) // method 2 of removing
 
-
+    
     } , false)
     
 
 
 
-
-
+                                 
+     
     /*read this : 
 
         type : keyboards-keys

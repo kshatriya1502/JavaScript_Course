@@ -10,7 +10,7 @@ console.log(2 != 1) ;
 console.log('-------------------------------------------------------------');
 
 
-console.log("2" > 1) ; // "2" get automaatically get converted into the number
+console.log("2" > 1) ; // "2" get automatically get converted into the number
 console.log("02" > 1) ; // true ; 
 console.log(typeof Number("02")) ;  //Number  hae 
 console.log('-------------------------------------------------------------');

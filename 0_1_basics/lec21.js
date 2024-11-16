@@ -18,7 +18,7 @@ console.log(this) // it will print the empty object.
 
 
 function chai() { 
-    console.log(this.username) // undefined will be printed , this is only accessible in the object not in the function 
+    console.log(this.username) // undefined will be printed , this is only accessible in the object not in the function .
     console.log(this) ; 
 }
 

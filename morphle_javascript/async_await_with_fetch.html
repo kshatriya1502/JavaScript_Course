@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    const gitapi = "https://api.github.com/uers/akshaymarch7" ;
+    async function getuser(){
+        try{
+            const response = await fetch(gitapi) ; // fetch() api is the promise
+            const data = await response.json() ; // conversion of response body to the json is the promise
+            console.log(data) ;
+        }
+        catch(err){
+            console.log(err) ;
+        }
+       
+    }
+    getuser()
+   
+
+
+    
+   
+    
+</script>
+</html>

@@ -19,9 +19,9 @@ inside the function.
 // 7 category:
 // String , Number , Boolean , null , undefined , Symbol , BignInt
 
-// symbol is used to make something unique 
+//symbol is used to make something unique 
 //BigInt is used to handle large values specially .
-// javascript is dynamically typed language it's not statically typed we can define the variable without using the datatype name
+//javascript is dynamically typed language it's not statically typed we can define the variable without using the datatype name.
 
 const score = 100
 const scoreValue = 100.3
@@ -30,12 +30,15 @@ const scoreValue = 100.3
 
 let userEmail ;  // here userEmail is undefined by default
 
+
+/**Symbol() creates a unique id */
+
 const id = Symbol("5252") ; 
 const anotherid = Symbol("5252") ; 
 console.log(id == anotherid) ;  // false 
 
 /*even we have used the same value inside the Symbol()  it creates 
-a differnet unique ids for the particular number the numbers are same*/
+a differnet unique ids for the particular number the even the  numbers are same*/
 
 const bignumber = 452522522336351616165n // using the n in the last convert the number into the bigint
 console.log(bignumber);
